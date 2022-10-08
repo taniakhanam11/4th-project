@@ -154,8 +154,8 @@ p {
 }
 
 .header-top .header-top-right i:hover {
-    background-color: #eee;
-    color: var(--icon);
+    background-color: var(--white);
+    color: var(--cyan-color);
 }
 
 
@@ -262,7 +262,7 @@ p {
     border-radius: 50%;
     background-color: transparent;
     animation-name: anim2;
-    animation-duration: 4s;
+    animation-duration: 2.2s;
     animation-iteration-count: infinite;
 }
 
@@ -631,13 +631,29 @@ p {
 
 .main-footer {
     width: 100%;
-    position: relative;
     overflow: hidden;
     background-color: var(--footer-bg);
-    background-image: url(../images/pattern-2.png);
-    background-repeat: no-repeat;
+    position: relative;
+    /* background-image: url(../images/pattern-2.png); */
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+}
+
+.main-footer img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation-name: anim3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim3 {
+    0% {
+        transform: scale(.9);
+    }
 }
 
 .main-footer .footer-circle {
@@ -748,7 +764,8 @@ p {
     right: 0;
     top: 0;
     height: 100%;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: var(--cyan-color);
     padding: 13px 20px;
     border: none;
 }
@@ -779,13 +796,12 @@ p {
 }
 
 .main-footer .footer-upper .footer-wdget .single-cta {
+    display: flex;
     margin-bottom: 10px;
 }
 
 .main-footer .footer-upper .footer-wdget .single-cta i {
     color: var(--cyan-color);
-    float: left;
-    margin-top: 8px;
     font-size: 20px;
     width: 35px;
     height: 35px;
@@ -806,8 +822,7 @@ p {
     color: #b6bbcd;
 }
 
-.main-footer .footer-upper .footer-wdget .single-cta .cta-text span:hover,
-.main-footer .footer-upper .footer-wdget .single-cta .cta-text h4:hover {
+.main-footer .footer-upper .footer-wdget .single-cta .cta-text span:hover {
     color: var(--cyan-color);
 }
 
