@@ -15,15 +15,16 @@
 
 </head>
 
+
 <body>
-    <!-- header section start -->
+    <!--======= header section start =======-->
     <header>
-        <div class="header-top bg-area">
+        <div class="bg-area header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="header-top-left">
-                            <span>Have any question? <a href="#"><i class="fa-solid fa-phone"></i></a> +132 345 444 6666</span>
+                            <span>Have any question? <a href="#"><i class="fa-solid fa-phone"></i></a> +880 8888888888</span>
                         </div>
                     </div>
                     <div class="col-6">
@@ -38,42 +39,44 @@
                 </div>
             </div>
         </div>
-        <div class="header-bottom bg-area">
+        <div class="bg-area header-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-4">
                         <div class="logo">
                             <a href="#">
-                                <!-- <h1 style="font-size: 36px; line-height: 70px; display: flex; color: tomato;">YOUR <span style="color: #333;"> LOGO</span> </h1> -->
                                 <img src="images/logo-2-300x85.png" alt="logo-2-300x85">
                             </a>
                         </div>
                     </div>
                     <div class="col-8">
                         <nav class="navber">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                                <i class="fas fa-bars"></i>
+                            </label>
                             <ul>
                                 <li><a href="#" class="active">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Professors</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="news-details.html">News</a></li>
+                                <li><a href="#professors">Professors</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
+                            <div id="darkmode">
+                                <i class="fa-solid fa-moon"></i>
+                            </div>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- header section end -->
+    <!--======= header section end =======-->
 
-    <!-- banner section start -->
-    <section class="banner-area bg-area">
-        <div class="banner-circle">
-            <div class="banner-circle-1"></div>
-            <div class="banner-circle-2"></div>
-        </div>
+    <!--======= banner section start =======-->
+    <section class="bg-area banner-area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -85,10 +88,11 @@
             </div>
         </div>
     </section>
-    <!-- banner section end -->
 
-    <!-- about us section start -->
-    <section class="about-area bg-area" id="about">
+    <!--======= banner section end =======-->
+
+    <!--======= about us section start =======-->
+    <section class="bg-area about-area" id="about">
         <div class="container">
             <div class="about-heading heading">
                 <h2>About Us</h2>
@@ -104,26 +108,36 @@
                     <div class="about-content">
                         <h2> Prof. Jone Lee</h2>
                         <strong>Researcher & Professor</strong>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate nam ab maxime doloremque delectus quidem fuga ullam eos praesentium.</p>
-                        <div class="social-icon">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur elit. Officia nam ab maxime doloremque delectus quidem fuga ullam eos praesentium.</p>
+                        <ul class="social-icon about-icon">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
                         <div class="about-btn">
-                            <a href="#">View More Details</a><i class="fa-solid fa-arrow-right"></i>
+                            <a href="about-details.html">View More Details<i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about us section end -->
+    <!--======= about us section end =======-->
 
-    <!-- gallery section start -->
-    <section class="gallery-area bg-area" id="gallery">
+    <!--======= gallery section start =======-->
+    <section class="bg-area gallery-area" id="gallery">
         <div class="container">
             <div class="gallery-heading heading">
                 <h2>Gallery</h2>
@@ -162,88 +176,81 @@
                         <a href="#"> <i class="fa-solid fa-camera"></i></a>
                     </div>
                 </div>
-
-                <!-- <div class="col-lg-3 col-md-12 mb-2 mb-lg-0">
-                    <div class="gallery-img-2">
-                        <img src="images/team-2.jpg" alt="">
-                        <a href="images/team-1.jpg"> <i class="fa-solid fa-camera"></i></a>
-                    </div>
-                    <div class="gallery-img-1">
-                        <img src="images/team-1.jpg">
-                        <a href="images/team-1.jpg"> <i class="fa-solid fa-camera"></i></a>
-                    </div>
-                </div> -->
             </div>
     </section>
-    <!-- gallery section end -->
+    <!--======= gallery section end =======-->
 
-    <!-- review section start -->
-    <section class="review-area bg-area">
+    <!--======= review section start =======-->
+    <section class="bg-area review-area counting-area">
         <div class="container">
-            <div class="row">
-                <div class="col-3 col-md-3 col-sm-12">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="review-icon">
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-graduation-cap"></i>
                         <div class="review-count">
-                            <span c>543+</span>
-                            <h3>Student</h3>
+                            <h2 class="timer count-title count-number" data-to="15000" data-speed="1500"></h2>
+                            <span>Students</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-3 col-md-3 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="review-icon">
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-user"></i>
                         <div class="review-count">
-                            <span c>543+</span>
-                            <h3>Student</h3>
+                            <h2 class="timer count-title count-number" data-to="16000" data-speed="1500"></h2>
+                            <span>lectures</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-3 col-md-3 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="review-icon">
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-award"></i>
                         <div class="review-count">
-                            <span c>543+</span>
-                            <h3>Student</h3>
+                            <h2 class="timer count-title count-number" data-to="17000" data-speed="1500"></h2>
+                            <span>awards</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-3 col-md-3 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="review-icon">
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-flask"></i>
                         <div class="review-count">
-                            <span c>543+</span>
-                            <h3>Student</h3>
+                            <h2 class="timer count-title count-number" data-to="18000" data-speed="1500"></h2>
+                            <span>exprements</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- review section end -->
+    <!--======= review section end =======-->
 
-    <!-- our-tean section start -->
-    <div class="our-team-area">
+    <!--======= our-tean section start =======-->
+    <section class="bg-area our-team-area" id="professors">
         <div class="container">
             <div class="team-heading heading">
-                <h2>Our Team</h2>
+                <h2>Professors</h2>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xl-3 mb-30">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
                     <div class="our-team-card">
                         <div class="our-team-img">
                             <img src="images/team-1.jpg" alt="">
-                            <ul class="team-icons social-icon">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
                             </ul>
-                            <div class="overly"></div>
                         </div>
                         <div class="our-team-content">
                             <a href="#">Aleesha Brown</a>
@@ -251,18 +258,24 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-xl-3 mb-30">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
                     <div class="our-team-card">
                         <div class="our-team-img">
                             <img src="images/team-1.jpg" alt="">
-                            <ul class="team-icons social-icon">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
                             </ul>
-                            <div class="overly"></div>
                         </div>
                         <div class="our-team-content">
                             <a href="#">Aleesha Brown</a>
@@ -270,17 +283,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 mb-30">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
                     <div class="our-team-card">
                         <div class="our-team-img">
                             <img src="images/team-1.jpg" alt="">
-                            <ul class="team-icons social-icon">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
                             </ul>
-                            <div class="overly"></div>
                         </div>
                         <div class="our-team-content">
                             <a href="#">Aleesha Brown</a>
@@ -288,17 +308,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 mb-30">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
                     <div class="our-team-card">
                         <div class="our-team-img">
                             <img src="images/team-1.jpg" alt="">
-                            <ul class="team-icons social-icon">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
                             </ul>
-                            <div class="overly"></div>
                         </div>
                         <div class="our-team-content">
                             <a href="#">Aleesha Brown</a>
@@ -308,16 +335,16 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- our-tean section end -->
+    </section>
+    <!--======= our-tean section end =======-->
 
-    <!-- are-you section start -->
-    <section class="are-you-area bg-area">
+    <!--======= are-you section start =======-->
+    <section class="bg-area are-you-area">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-sm-12">
                     <h2>ARE YOU READY TO KNOW OUR UNIVERSITY</h2>
-                    <h3>JUST CLICK BUTTON AND JOIN WITH US</h3>
+                    <h2>JUST CLICK BUTTON AND JOIN WITH US</h2>
                     <div class="are-you-btn">
                         <a href="#" class="btn are-you-btn-1">SUBSCRIBE</a>
                         <a href="#" class="btn">JOIN US</a>
@@ -326,21 +353,119 @@
             </div>
         </div>
     </section>
-    <!-- are-you section end -->
+    <!--======= are-you section end =======-->
 
-    <!-- footer section start -->
-    <footer class="footer-area bg-area">
-        <img src="images/pattern-2.png" alt="">
+    <!--======= blog section start =======-->
+    <section class="bg-area blog-area" id="blog">
+        <div class="container">
+            <div class="gallery-heading heading">
+                <h2>Blog</h2>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <a href="blog-details.html">
+                                <img src="images/gallery-1.jpg" alt="gallery-1">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <span>21 Dec 2022</span>
+                            <a href="blog-details.html">
+                                <h3>Lorem ipsum dolor sit</h3>
+                            </a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, saepe.</p>
+                            <a href="blog-details.html" class="btn blog-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <a href="#">
+                                <img src="images/gallery-2.jpg" alt="gallery-2">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <span>21 Dec 2022</span>
+                            <a href="blog-details.html">
+                                <h3>Lorem ipsum dolor sit</h3>
+                            </a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, saepe.</p>
+                            <a href="#" class="btn blog-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <a href="#">
+                                <img src="images/gallery-3.png" alt="gallery-3">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <span>21 Dec 2022</span>
+                            <a href="blog-details.html">
+                                <h3>Lorem ipsum dolor sit</h3>
+                            </a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, saepe.</p>
+                            <a href="#" class="btn blog-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--======= blog section end =======-->
+
+    <!--======= contact section start =======-->
+    <section class="bg-area contact-bg" id="contact">
+        <div class="contact-heading heading">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="contact-form">
+                        <form action="">
+                            <h3>Send Message Us</h3>
+                            <input type="text" placeholder="Your Name" class="box">
+                            <input type="email" placeholder="Your Email Address" class="box">
+                            <textarea name="" id="" cols="30" rows="6" class="box message" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn contact-btn"> Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.767964122052!2d89.53934691439989!3d22.811060229925413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff8f7d211b05c5%3A0x1b4e2e82f3afbcd7!2sAuthentic%20IT%20Solutions!5e0!3m2!1sen!2sbd!4v1671529151800!5m2!1sen!2sbd"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======= contact section end =======-->
+
+    <!--======= footer section start =======-->
+    <footer class="bg-area footer-area">
+        <div class="footer-img">
+            <img src="images/pattern-2.png" alt="">
+        </div>
         <div class="footer-circle-1"></div>
         <div class="footer-circle-2"></div>
         <div class="container">
             <div class="row footer-top p-0">
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="footer-logo">
-                        <h1>YOUR LOGO</h1>
+                        <a href="#">
+                            <img src="images/logo-2-300x85.png" alt="">
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="footer-icons social-icon">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -353,7 +478,7 @@
 
             <div class="footer-upper">
                 <div class="row p-0">
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                         <h3>About</h3>
                         <div class="footer-wdget">
                             <p>Lorem ipsum is simply dolor sit ametcn sectetur adipiscing elit. Phasellus vehic sagittis euismod.</p>
@@ -366,7 +491,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                         <h3>Information</h3>
                         <div class="footer-wdget">
                             <ul>
@@ -379,7 +504,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                         <h3>About</h3>
                         <div class="footer-wdget">
                             <ul>
@@ -392,7 +517,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                         <h3>Contact</h3>
                         <div class="footer-wdget">
                             <div class="single-cta">
@@ -433,10 +558,10 @@
             </div>
         </div>
     </footer>
-    <!-- footer section end -->
+    <!--======= footer section end =======-->
 
 
-
+    <script src="js/jqueryall.2.2.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
